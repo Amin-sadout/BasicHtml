@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- used ! DOCTYPE to declare the document type and version of HTML -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,19 +6,19 @@
     <title>Basic Html Website</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="">Blog</a></li>
+    <nav>  <!-- used nav to define a navigation bar, its usually better to use nav for navigation links. pretty self explanatory lol -->
+        <ul> <!-- used ul to define an unordered lists, obviously if you want it ordered and numbered we'll be using ol instead of ul-->
+            <li><a href="">Blog</a></li> <!-- li for list item + a link that will take to a speceficed location, the whole point of links ay?-->
             <li><a href="">Media</a></li>
             <li><a href="">About</a></li>
         </ul>
     </nav>
     <header>
-        <h1>New York City</h1>
+        <h1>New York City</h1> 
     </header>
         <main>
             <section id="blog">
-                <article>
+                <article> <!-- Better for long ass texts or description i guess, not really sure but it should help the page with it seo level? -->
                     <p> 
                         New York City is made up of five boroughs which include Queens, Manhattan, 
                         Brooklyn, the Bronx, and Staten Island. 
@@ -34,7 +34,9 @@
                     </p>
                 </article>
             </section>
-            <figure> <img src="media/imgs/Statue_of_Liberty_7.jpg"></img> 
+            <figure> <img src="media/imgs/Statue_of_Liberty_7.jpg"></img> <!-- eh pretty simple shi, img is used to define a picture and the src is where we getting that shi from
+                in my case obviously from my local storage, usually you use alt to define the text  that will be displayed if the image is not found but we got 
+                figcaption underneath instead, why? why not? -->
                 <figcaption>This is the Statue of Liberty, a popular tourist attraction located on Liberty Island.</figcaption>
             </figure>
             <aside><p>New York City is very popular for the variety of great food it has. Some of the top food items in NYC include:</p>
@@ -55,11 +57,12 @@
                   <p>While the view in the city is beautiful, the sounds are not as lovely. 
                     Below you'll see an example of the view and the sounds you'll deal with in NYC on a daily basis.</p>
                 </article>
-                <video controls autoplay muted loop>
-                    <source src="media/video/nyc-skyline-timelapse.mp4" type="video/mp4">
+                <video controls autoplay muted loop> <!-- video is used to define a video..DUH, the controls attribute add controls...DUH, autoplay makes it play automatically, and the rest is pretty self explanatory -->
+                    <source src="media/video/nyc-skyline-timelapse.mp4" type="video/mp4"> <!-- as before src is to BRING FOURTH the video from wherever you want it to
+                    come from but in different to the previous time we also use <source> to start and type inside of it to speceify the type of video format we using -->
                 </video>
                 <embed>
-                    <audio controls autoplay loop>
+                    <audio controls autoplay loop> <!--same as before with small changes ofc-->
                         <source src="media/audio/nyc-sounds.mov" type="audio/mpeg">
                     </audio>
         </main>
